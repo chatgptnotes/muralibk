@@ -2,6 +2,7 @@
 
 import { motion } from 'framer-motion';
 import { ArrowRight, Phone, Calendar } from 'lucide-react';
+import Image from 'next/image';
 
 const Hero = () => {
   return (
@@ -84,15 +85,34 @@ const Hero = () => {
             className="relative"
           >
             <div className="relative mx-auto lg:mx-0 max-w-md">
-              {/* Placeholder for doctor's image */}
-              <div className="w-full h-96 bg-gradient-to-br from-blue-100 to-green-100 rounded-2xl shadow-2xl flex items-center justify-center">
-                <div className="text-center">
-                  <div className="w-32 h-32 bg-blue-200 rounded-full mx-auto mb-4 flex items-center justify-center">
-                    <span className="text-4xl text-blue-600">👨‍⚕️</span>
-                  </div>
-                  <p className="text-gray-600">Dr. Murali BK</p>
-                  <p className="text-sm text-gray-500">Professional Photo</p>
-                </div>
+              {/* Doctor's Image */}
+              <div className="relative w-full h-96 rounded-2xl shadow-2xl overflow-hidden">
+                <Image
+                  src="/images/dr-murali-bk.jpg"
+                  alt="Dr. Murali BK - Orthopedic Surgeon"
+                  fill
+                  className="object-cover"
+                  priority
+                  onError={(e) => {
+                    // Fallback to placeholder if image doesn't exist
+                    const target = e.target as HTMLImageElement;
+                    target.style.display = 'none';
+                    const parent = target.parentElement;
+                    if (parent) {
+                      parent.innerHTML = `
+                        <div class="w-full h-full bg-gradient-to-br from-blue-100 to-green-100 flex items-center justify-center">
+                          <div class="text-center">
+                            <div class="w-32 h-32 bg-blue-200 rounded-full mx-auto mb-4 flex items-center justify-center">
+                              <span class="text-4xl text-blue-600">👨‍⚕️</span>
+                            </div>
+                            <p class="text-gray-600">Dr. Murali BK</p>
+                            <p class="text-sm text-gray-500">Professional Photo</p>
+                          </div>
+                        </div>
+                      `;
+                    }
+                  }}
+                />
               </div>
               
               {/* Floating badges */}
