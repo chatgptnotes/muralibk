@@ -1,7 +1,7 @@
 'use client';
 
 import { motion } from 'framer-motion';
-import { Heart, Bone, Brain, Eye, Baby, Activity, Shield, Stethoscope } from 'lucide-react';
+import { Heart, Bone, Brain, Activity, Shield, Stethoscope } from 'lucide-react';
 
 const Services = () => {
   const services = [

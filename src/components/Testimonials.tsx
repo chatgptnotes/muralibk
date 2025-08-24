@@ -127,7 +127,7 @@ const Testimonials = () => {
 
               {/* Testimonial Text */}
               <p className="text-gray-700 mb-6 italic">
-                "{testimonial.text}"
+                &ldquo;{testimonial.text}&rdquo;
               </p>
 
               {/* Patient Info */}
@@ -161,11 +161,11 @@ const Testimonials = () => {
           
           <div className="grid md:grid-cols-2 gap-8">
             <div>
-              <p className="text-lg mb-4 italic">
-                "Dr. Murali BK's expertise in orthopedic surgery is unmatched. 
-                His dedication to patient care and surgical precision has made 
-                Hope Hospital the go-to destination for orthopedic treatment in Central India."
-              </p>
+                             <p className="text-lg mb-4 italic">
+                 &ldquo;Dr. Murali BK&apos;s expertise in orthopedic surgery is unmatched. 
+                 His dedication to patient care and surgical precision has made 
+                 Hope Hospital the go-to destination for orthopedic treatment in Central India.&rdquo;
+               </p>
               <div className="flex items-center gap-4">
                 <div className="w-12 h-12 bg-white/20 rounded-full flex items-center justify-center">
                   <span className="text-white font-bold">MK</span>
@@ -178,11 +178,11 @@ const Testimonials = () => {
             </div>
             
             <div>
-              <p className="text-lg mb-4 italic">
-                "The combination of advanced technology, skilled medical professionals, 
-                and compassionate care makes Hope Hospital stand out. Dr. Murali BK's 
-                leadership has created a center of excellence."
-              </p>
+                             <p className="text-lg mb-4 italic">
+                 &ldquo;The combination of advanced technology, skilled medical professionals, 
+                 and compassionate care makes Hope Hospital stand out. Dr. Murali BK&apos;s 
+                 leadership has created a center of excellence.&rdquo;
+               </p>
               <div className="flex items-center gap-4">
                 <div className="w-12 h-12 bg-white/20 rounded-full flex items-center justify-center">
                   <span className="text-white font-bold">HH</span>

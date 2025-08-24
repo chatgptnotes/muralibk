@@ -88,9 +88,9 @@ const About = () => {
                 </div>
                 <h4 className="text-xl font-semibold text-gray-900 mb-2">Medical Philosophy</h4>
                 <p className="text-gray-600">
-                  "Compassion, excellence, and innovation in healthcare, 
+                  &ldquo;Compassion, excellence, and innovation in healthcare, 
                   with a focus on improving lives through patient-centric 
-                  orthopedic care."
+                  orthopedic care.&rdquo;
                 </p>
               </div>
             </div>

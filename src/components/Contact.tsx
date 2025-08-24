@@ -67,10 +67,10 @@ const Contact = () => {
           <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
             Contact Us
           </h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Get in touch with Dr. Murali BK and the Hope Hospital team. 
-            We're here to help with appointments, consultations, and any questions you may have.
-          </p>
+                      <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+              Get in touch with Dr. Murali BK and the Hope Hospital team. 
+              We&apos;re here to help with appointments, consultations, and any questions you may have.
+            </p>
         </motion.div>
 
         <div className="grid lg:grid-cols-2 gap-16">
